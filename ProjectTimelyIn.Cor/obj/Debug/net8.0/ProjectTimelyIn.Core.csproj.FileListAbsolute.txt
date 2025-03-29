@@ -1,0 +1,12 @@
+C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Cor\bin\Debug\net8.0\ProjectTimelyIn.Core.deps.json
+C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Cor\bin\Debug\net8.0\ProjectTimelyIn.Core.dll
+C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Cor\bin\Debug\net8.0\ProjectTimelyIn.Core.pdb
+C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Cor\obj\Debug\net8.0\ProjectTimelyIn.Core.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Cor\obj\Debug\net8.0\ProjectTimelyIn.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Cor\obj\Debug\net8.0\ProjectTimelyIn.Core.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Cor\obj\Debug\net8.0\ProjectTimelyIn.Core.AssemblyInfo.cs
+C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Cor\obj\Debug\net8.0\ProjectTimelyIn.Core.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Cor\obj\Debug\net8.0\ProjectTimelyIn.Core.dll
+C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Cor\obj\Debug\net8.0\refint\ProjectTimelyIn.Core.dll
+C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Cor\obj\Debug\net8.0\ProjectTimelyIn.Core.pdb
+C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Cor\obj\Debug\net8.0\ref\ProjectTimelyIn.Core.dll

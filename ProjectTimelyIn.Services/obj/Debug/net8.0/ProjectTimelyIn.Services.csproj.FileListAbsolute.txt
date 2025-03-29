@@ -1,0 +1,17 @@
+C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Services\bin\Debug\net8.0\ProjectTimelyIn.Services.deps.json
+C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Services\bin\Debug\net8.0\ProjectTimelyIn.Services.dll
+C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Services\bin\Debug\net8.0\ProjectTimelyIn.Services.pdb
+C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Services\bin\Debug\net8.0\ProjectTimelyIn.Core.dll
+C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Services\bin\Debug\net8.0\ProjectTimelyIn.Data.dll
+C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Services\bin\Debug\net8.0\ProjectTimelyIn.Core.pdb
+C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Services\bin\Debug\net8.0\ProjectTimelyIn.Data.pdb
+C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Services\obj\Debug\net8.0\ProjectTimelyIn.Services.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Services\obj\Debug\net8.0\ProjectTimelyIn.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Services\obj\Debug\net8.0\ProjectTimelyIn.Services.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Services\obj\Debug\net8.0\ProjectTimelyIn.Services.AssemblyInfo.cs
+C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Services\obj\Debug\net8.0\ProjectTimelyIn.Services.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Services\obj\Debug\net8.0\ProjectT.902885BB.Up2Date
+C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Services\obj\Debug\net8.0\ProjectTimelyIn.Services.dll
+C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Services\obj\Debug\net8.0\refint\ProjectTimelyIn.Services.dll
+C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Services\obj\Debug\net8.0\ProjectTimelyIn.Services.pdb
+C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Services\obj\Debug\net8.0\ref\ProjectTimelyIn.Services.dll
