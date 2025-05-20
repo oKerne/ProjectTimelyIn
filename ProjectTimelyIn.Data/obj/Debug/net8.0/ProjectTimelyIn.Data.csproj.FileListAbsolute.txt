@@ -15,3 +15,4 @@ C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Data\obj\Debug\net8
 C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Data\obj\Debug\net8.0\ProjectTimelyIn.Data.pdb
 C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Data\obj\Debug\net8.0\ProjectTimelyIn.Data.genruntimeconfig.cache
 C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Data\obj\Debug\net8.0\ref\ProjectTimelyIn.Data.dll
+C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Data\obj\Debug\net8.0\ProjectTimelyIn.Data.sourcelink.json

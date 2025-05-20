@@ -14,14 +14,13 @@ namespace ProjectTimelyIn.Services.Implementations
         private readonly IEmployeeRepository _employeeRepository;
         private readonly IMapper _mapper;
 
-        public EmployeeService(IEmployeeRepository employeRepository,
-            IMapper mapper)
+        public EmployeeService(IEmployeeRepository employeRepository,IMapper mapper)
         {
             _employeeRepository = employeRepository;
             _mapper = mapper;
         }
 
-        public async Task<List<Employee>> GetListAsync()
+        public async Task<List<Employee>> GetAllAsync()
         {
             try
             {
@@ -94,10 +93,7 @@ namespace ProjectTimelyIn.Services.Implementations
             }
         }
 
-        Task<List<Employee>> IEmployeeServices.GetAllAsync()
-        {
-            throw new NotImplementedException();
-        }
+      
     }
 }
 

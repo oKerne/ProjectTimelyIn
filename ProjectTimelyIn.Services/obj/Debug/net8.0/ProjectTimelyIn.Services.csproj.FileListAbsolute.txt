@@ -15,3 +15,4 @@ C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Services\obj\Debug\
 C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Services\obj\Debug\net8.0\refint\ProjectTimelyIn.Services.dll
 C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Services\obj\Debug\net8.0\ProjectTimelyIn.Services.pdb
 C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Services\obj\Debug\net8.0\ref\ProjectTimelyIn.Services.dll
+C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn.Services\obj\Debug\net8.0\ProjectTimelyIn.Services.sourcelink.json

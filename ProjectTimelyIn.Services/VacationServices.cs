@@ -9,12 +9,13 @@ namespace ProjectTimelyIn.Services
     public class VacationServices : IVacationServices
     {
         private readonly VacationRepository _vacation;
-        private readonly IMapper _mapper;
+
+        //private readonly IMapper _mapper;
 
         public VacationServices(VacationRepository vacationRepository, IMapper mapper)
         {
             _vacation = vacationRepository;
-            _mapper = mapper;
+            //_mapper = mapper;
         }
         public async Task<List<Vacation>> GetAllAsync()
         {

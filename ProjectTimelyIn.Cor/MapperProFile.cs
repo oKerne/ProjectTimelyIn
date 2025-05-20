@@ -17,7 +17,7 @@ namespace ProjectTimelyIn.Core
                  .ForMember(dest => dest.FullName, opt => opt.MapFrom(src => src.FullName));
             //CreateMap<EmployeePostModel, Employee>()
             // .ForMember(dest => dest.PasswordHash, opt => opt.MapFrom(src => HashPassword(src.Password)));
-            CreateMap<Vacation, VacationRequestDTO>().ReverseMap()
+            CreateMap<Vacation, VacationDTO>().ReverseMap()
              .ForMember(dest => dest.EmployeeId, opt => opt.MapFrom(src => src.EmployeeId))
              .ForMember(dest => dest.Employee, opt => opt.MapFrom(src => src.Employee != null ? src.Employee.FullName : string.Empty));  
 

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using ProjectTimelyIn.Services.Implementations;
 using ProjectTimelyIn.API.Models;
 using ProjectTimelyIn.Core.Repositorys;
+using ProjectTimelyIn.Core.Services;
 
 namespace ProjectTimelyIn.Api.Controllers
 {
@@ -13,12 +14,11 @@ namespace ProjectTimelyIn.Api.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [Authorize]
-    [Route("[controller]")]
     public class EmployeesController : ControllerBase
     {
-        private readonly EmployeeService _employeeService;
+        private readonly IEmployeeServices _employeeService;
         private readonly IMapper _mapper;
-        public EmployeesController(EmployeeService employeeService, IMapper mapper)
+        public EmployeesController(IEmployeeServices employeeService, IMapper mapper)
         {
             _employeeService = employeeService;
             _mapper = mapper;
@@ -27,7 +27,7 @@ namespace ProjectTimelyIn.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> GetEmployees()
         {
-            var employees = await _employeeService.GetListAsync();
+            var employees = await _employeeService.GetAllAsync();
             var employeeDTOs = _mapper.Map<List<EmployeeDTO>>(employees); 
             return Ok(employeeDTOs); 
         }

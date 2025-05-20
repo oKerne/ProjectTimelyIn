@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjectTimelyIn.Core.DTOs
 {
-    public class CreateUserDTO
+    public class UserDTO
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }

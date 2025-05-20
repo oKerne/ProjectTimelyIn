@@ -4,9 +4,13 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using ProjectTimelyIn.Core.DTOS;
+
 using ProjectTimelyIn.Core.Entities;
 using ProjectTimelyIn.Core.Repositorys;
+using ProjectTimelyIn.Dtat.Repositories;
+using ProjectTimelyIn.Core.Services;
 using System.Security.Claims;
+using ProjectTimelyIn.Api.Models;
 
 namespace ProjectTimelyIn.Api.Controllers
 {
@@ -15,46 +19,72 @@ namespace ProjectTimelyIn.Api.Controllers
     public class VacationsController : ControllerBase
     {
         private readonly IVacationRepository _vacationRepository;
+        private readonly IVacationServices _vacationService;
+
         private readonly IMapper _mapper;
 
-        public VacationsController(IVacationRepository vacationRepository, IMapper mapper)
+        public VacationsController(IVacationRepository vacationRepository,IMapper mapper, IVacationServices vacationService)
         {
             _vacationRepository = vacationRepository;
             _mapper = mapper;
+            _vacationService = vacationService;
         }
         [HttpGet]
         public async Task<IActionResult> GetVacationRequests()
         {
-            var vacationRequests = await _vacationRepository.GetAllAsync();
-            var vacationRequestDTOs = _mapper.Map<List<VacationRequestDTO>>(vacationRequests);
+            var vacationRequests = await _vacationService.GetAllAsync();
+            var vacationRequestDTOs = _mapper.Map<List<VacationDTO>>(vacationRequests);
             return Ok(vacationRequestDTOs);
         }
 
         [HttpGet("employee/{employeeId}")]
-        public async Task<IActionResult> GetVacationRequestsByEmployee(int employeeId)
+        public async Task<IActionResult> GetVacationByEmployee(int employeeId)
         {
-            var vacation = await _vacationRepository.GetByEmployeeIdAsync(employeeId);
+            var vacation = await _vacationService.GetByEmployeeIdAsync(employeeId);
             if (vacation == null || vacation.Count == 0)
             {
                 return NotFound(new { Message = "Vacation requests not found for this employee." });
             }
 
-            var vacationDTOs = _mapper.Map<List<VacationRequestDTO>>(vacation);
+            var vacationDTOs = _mapper.Map<List<VacationDTO>>(vacation);
             return Ok(vacationDTOs);
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateVacation([FromBody] Vacation newVacation)
+        //public async Task<IActionResult> CreateVacation([FromBody] Vacation newVacation)
+        //{
+        //    if (newVacation == null)
+        //    {
+        //        return BadRequest(new { Message = "Invalid vacation request data." });
+        //    }
+
+        //    var createdVacation = await _vacationRepository.AddAsync(newVacation);
+        //    var vacationRequestDTO = _mapper.Map<VacationRequestDTO>(createdVacation);
+        //    return CreatedAtAction(nameof(GetVacationRequestsByEmployee), new { employeeId = createdVacation.EmployeeId }, vacationRequestDTO);
+        //}
+        [HttpPost]
+        public async Task<IActionResult> CreateVacation([FromBody] VacationPostModel vacationPostModel)
         {
-            if (newVacation == null)
+            if (vacationPostModel == null)
             {
-                return BadRequest(new { Message = "Invalid vacation request data." });
+                return BadRequest(new { Message = "Invalid vacation data" });
             }
 
-            var createdVacation = await _vacationRepository.AddAsync(newVacation);
-            var vacationRequestDTO = _mapper.Map<VacationRequestDTO>(createdVacation);
-            return CreatedAtAction(nameof(GetVacationRequestsByEmployee), new { employeeId = createdVacation.EmployeeId }, vacationRequestDTO);
+            var newVacation = new Vacation
+            {
+                StartDate = vacationPostModel.StartDate,
+                EndDate = vacationPostModel.EndDate,
+                Reason = vacationPostModel.Reason,
+                EmployeeId = vacationPostModel.EmployeeId
+            };
+
+            var createdVacation = await _vacationService.AddVacationAsync(newVacation);
+
+            var vacationDTO = _mapper.Map<VacationDTO>(createdVacation);
+            return CreatedAtAction(nameof(GetVacationByEmployee), new { employeeId = createdVacation.EmployeeId }, vacationDTO);
         }
+
+
 
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateVacationRequest(int id, [FromBody] Vacation updatedVacationRequest)
@@ -75,7 +105,7 @@ namespace ProjectTimelyIn.Api.Controllers
             existingVacationRequest.Reason = updatedVacationRequest.Reason;
 
             var updated = await _vacationRepository.UpdateAsync(existingVacationRequest);
-            var vacationRequestDTO = _mapper.Map<VacationRequestDTO>(updated);
+            var vacationRequestDTO = _mapper.Map<VacationDTO>(updated);
             return Ok(vacationRequestDTO);
         }
 

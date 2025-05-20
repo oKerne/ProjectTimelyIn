@@ -171,3 +171,4 @@ C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn\bin\Debug\net8.0\Pr
 C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn\bin\Debug\net8.0\NLog.dll
 C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn\bin\Debug\net8.0\NLog.Extensions.Logging.dll
 C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn\bin\Debug\net8.0\NLog.Web.AspNetCore.dll
+C:\Users\pc\Desktop\Net Core\ProjectTimelyIn\ProjectTimelyIn\obj\Debug\net8.0\ProjectTimelyIn.Api.sourcelink.json
